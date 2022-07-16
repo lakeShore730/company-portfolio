@@ -38,7 +38,7 @@ const Contact = () => {
         <Container>
           <Navbar />
 
-          <div className="py-16 lg:flex items-center min-h-[calc(100vh-100px)] space-x-20">
+          <div className="py-16 lg:flex items-center min-h-[calc(100vh-100px)] lg:space-x-20">
             <div className="grow-0 bg-indigo-100 p-10 rounded-md hover:bg-indigo-300">
               <div className="text-gray-600 text-center flex justify-center">
                 <div>
