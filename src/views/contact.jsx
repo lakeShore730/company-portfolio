@@ -34,90 +34,85 @@ const Contact = () => {
 
   return (
     <div>
-      <div className="min-h-[calc(100vh)]">
+      <div>
         <Container>
           <Navbar />
-          <div className="py-16">
-            <h1 className="capitalize font-semibold text-center text-2xl text-gray-600">
-              Contact Us
-            </h1>
-            <p className="mt-3 text-md text-gray-600 text-center leading-6">
-              Do you have any question ?
-            </p>
 
-            <div className="flex justify-center mt-10">
-              <form
-                onSubmit={handleSubmit(onSubmit)}
-                className="w-full max-w-[700px]"
-              >
-                <input
-                  {...register("name")}
-                  placeholder="Your name"
-                  className="w-full border border-gray-300 px-2 py-2 outline-none rounded-lg text-gray-700"
-                />
-                <p className="text-sm mt-1 text-red-700">
-                  {errors?.name?.message || ""}
-                </p>
-                <input
-                  {...register("email")}
-                  placeholder="Your email"
-                  className="w-full border border-gray-300 px-2 py-2 outline-none rounded-lg text-gray-700 mt-7"
-                />
-                <p className="text-sm mt-1 text-red-700">
-                  {errors?.email?.message || ""}
-                </p>
-                <input
-                  type="number"
-                  {...register("contactNumber")}
-                  placeholder="Your conatct"
-                  className="w-full border border-gray-300 px-2 py-2 outline-none rounded-lg text-gray-700 mt-7"
-                />
-                <p className="text-sm mt-1 text-red-700">
-                  {errors?.contactNumber?.message || ""}
-                </p>
-                <textarea
-                  {...register("message")}
-                  rows={5}
-                  placeholder="Your message"
-                  className="w-full border border-gray-300 px-2 py-2
-                 outline-none rounded-lg mt-7"
-                />
-                <p className="text-sm mt-1 text-red-700">
-                  {errors?.message?.message || ""}
-                </p>
-                <Button
-                  type="submit"
-                  className="bg-primary text-slate-100 mt-7 hover:bg-[#61045f]"
-                >
-                  Submit Form
-                </Button>
-              </form>
+          <div className="py-16 lg:flex items-center min-h-[calc(100vh-100px)] space-x-20">
+            <div className="grow-0 bg-indigo-100 p-10 rounded-md hover:bg-indigo-300">
+              <div className="text-gray-600 text-center flex justify-center">
+                <div>
+                  <div className="flex items-center">
+                    <MdPhone className="text-primary" />
+                    <p className="ml-2">{siteSettings.contact}</p>
+                  </div>
+                  <div className="flex items-center mt-7">
+                    <MdAlternateEmail className="text-primary" />
+                    <p className="ml-2">{siteSettings.email}</p>
+                  </div>
+                  <div className="flex items-center mt-7">
+                    <MdLocationOn className="text-primary" />
+                    <p className="ml-2">{siteSettings.location}</p>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </Container>
-      </div>
 
-      <div className="pb-16">
-        <Container>
-          <h1 className="capitalize font-semibold text-center text-2xl text-gray-600">
-            Contact Information
-          </h1>
-          <p className="mt-3 text-md text-gray-600 text-center leading-6">
-            Our contact information
-          </p>
-          <div className="mt-8 text-gray-600 text-center flex justify-center">
-            <div>
-              <div className="flex items-center">
-                <MdPhone className="text-primary" />
-                <p className="ml-2">{siteSettings.contact}</p>
-              </div>
-              <div className="flex items-center mt-2">
-                <MdAlternateEmail className="text-primary" />
-                <p className="ml-2">{siteSettings.email}</p>
-              </div>
-              <div className="flex items-center mt-2">
-                <MdLocationOn className="text-primary" />
-                <p className="ml-2">{siteSettings.location}</p>
+            <div className="grow mt-16 lg:mt-0">
+              <h1 className="capitalize font-semibold text-center text-2xl text-gray-600">
+                Contact Us
+              </h1>
+              <p className="mt-3 text-md text-gray-600 text-center leading-6">
+                Do you have any question ?
+              </p>
+
+              <div className="flex justify-center mt-10">
+                <form
+                  onSubmit={handleSubmit(onSubmit)}
+                  className="w-full max-w-[700px]"
+                >
+                  <input
+                    {...register("name")}
+                    placeholder="Your name"
+                    className="w-full border border-gray-300 px-2 py-2 outline-none rounded-lg text-gray-700"
+                  />
+                  <p className="text-sm mt-1 text-red-700">
+                    {errors?.name?.message || ""}
+                  </p>
+                  <input
+                    {...register("email")}
+                    placeholder="Your email"
+                    className="w-full border border-gray-300 px-2 py-2 outline-none rounded-lg text-gray-700 mt-7"
+                  />
+                  <p className="text-sm mt-1 text-red-700">
+                    {errors?.email?.message || ""}
+                  </p>
+                  <input
+                    type="number"
+                    {...register("contactNumber")}
+                    placeholder="Your conatct"
+                    className="w-full border border-gray-300 px-2 py-2 outline-none rounded-lg text-gray-700 mt-7"
+                  />
+                  <p className="text-sm mt-1 text-red-700">
+                    {errors?.contactNumber?.message || ""}
+                  </p>
+                  <textarea
+                    {...register("message")}
+                    rows={5}
+                    placeholder="Your message"
+                    className="w-full border border-gray-300 px-2 py-2
+                 outline-none rounded-lg mt-7"
+                  />
+                  <p className="text-sm mt-1 text-red-700">
+                    {errors?.message?.message || ""}
+                  </p>
+                  <Button
+                    type="submit"
+                    className="bg-primary text-slate-100 mt-7 hover:bg-[#61045f]"
+                  >
+                    Submit Form
+                  </Button>
+                </form>
               </div>
             </div>
           </div>
