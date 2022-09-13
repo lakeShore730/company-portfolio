@@ -1,0 +1,9 @@
+.swiper-pagination-bullet{
+    background-color: rebeccapurple;
+}
+
+.swiper-pagination {
+    position: absolute;
+    top: 10px;
+    background-color: rebeccapurple; 
+}

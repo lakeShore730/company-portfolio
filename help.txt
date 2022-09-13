@@ -1,0 +1,40 @@
+COLORS
+
+Primary = #2196F3
+Light primary = #2196F3
+Dark primary = #1976D2
+
+Secondary = #4CAF50
+Light secondary = #81C784
+Dark secondary =  #388E3C
+
+Background = #FFFFFF
+Error = #B00020
+Surface = #FFFFFF
+
+Reference: https://material.io/design/color/the-color-system.html#color-theme-creation
+
+
+FONT SIZE FOR THE DESKTOP
+
+Body = 16px
+Heading = 32px
+Sub heading = 25px
+Input field = 16px
+
+
+FONT SIZE FOR MOBILE
+
+Body = 16px
+Heading = 21px
+Sub heading = 18px
+Input field = 16px
+
+For the maller text like caption use 13px
+
+Reference: https://www.editorx.com/shaping-design/article/font-size
+
+
+
+
+
