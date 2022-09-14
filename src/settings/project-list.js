@@ -2,10 +2,10 @@ import { Smile, Wind } from "react-feather";
 
 const projectList = [
   {
-    id: "sales-prediction",
-    title: "Sales Prediction",
+    id: "maya-museum",
+    title: "Maya Museum",
     Icon: Wind,
-    path: "/",
+    path: "https://lakeshore-maya-museum-frontend.herokuapp.com/",
     description: `Extracts meaningful insights from raw data to quickly solve complex, 
         data-rich business problems.`,
   },
