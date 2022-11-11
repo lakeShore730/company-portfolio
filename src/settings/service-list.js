@@ -14,16 +14,14 @@ const serviceList = [
     title: "Automation",
     Icon: Cpu,
     path: "/services",
-    description: `Extracts meaningful insights from raw data to quickly solve complex, 
-    data-rich business problems.`,
+    description: `Automate the easy stuff. Focus on the complex problems.`,
   },
   {
     id: "web-development",
     title: "Web development",
     Icon: CloudDrizzle,
     path: "/services",
-    description: `Extracts meaningful insights from raw data to quickly solve complex, 
-    data-rich business problems.`,
+    description: `Where mind the design meet to create what you want. `,
   },
 ];
 
